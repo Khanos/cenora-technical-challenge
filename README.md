@@ -47,20 +47,18 @@ Start the server
 #### Get all items
 
 ```http
-  GET /api/items
+  GET /api/v1/getAllCruises
 ```
 
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `api_key` | `string` | **Required**. Your API key |
+Any other url will return a page with the list of endpoint (For Documentation)
 
-#### add(num1, num2)
+```http
+  GET /*
+```
 
-Takes two numbers and returns the sum.
+#### getAllCruises
 
-## Demo
-
-Insert gif or link to demo
+Returns a list of objects with info related to Carnival Cruises.
 
 ## Authors
 

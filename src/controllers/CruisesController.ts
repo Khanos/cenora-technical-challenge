@@ -89,6 +89,7 @@ class CruiseController {
   //     filTerSelectorId = 'filter-dur-D3'
   //   }
   //   console.log(`input#${filTerSelectorId}`)
+  // https://pptr.dev/#?product=Puppeteer&version=v13.6.0&show=api-pageclickselector-options
   //   await page.click(`input#${filTerSelectorId}`)
   //   try {
   //     // get the body of the page
