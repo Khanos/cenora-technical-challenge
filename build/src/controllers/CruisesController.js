@@ -44,9 +44,14 @@ class CruiseController {
                 const prefixUrl = 'https://www.carnival.com';
                 const browser = yield puppeteer_1.default.launch({
                     headless: true,
+                    userDataDir: './cache',
+                    args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage', '--disable-accelerated-2d-canvas', '--disable-gpu', '--window-size=1920,1080']
                 });
                 const page = yield browser.newPage();
                 yield page.goto('https://www.carnival.com/cruise-ships.aspx');
+                page.on('error', e => {
+                    throw new Error(JSON.stringify(e));
+                });
                 // get the body of the page
                 const bodyHTML = yield page.evaluate(() => document.body.innerHTML);
                 // load cheerio

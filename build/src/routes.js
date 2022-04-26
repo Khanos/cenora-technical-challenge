@@ -20,7 +20,6 @@ class IndexRouter {
     initRoutes() {
         // Conference routes
         this.router.get('/getAllCruises', CruisesController_1.default.getAllCruises);
-        // this.router.get('/getAllCruisesByNumberOfDays/:numberOfDays', CruisesController.getAllCruisesByNumberOfDays);
     }
 }
 const indexRoutes = new IndexRouter();

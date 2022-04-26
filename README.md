@@ -50,6 +50,10 @@ Start the server
   GET /api/v1/getAllCruises
 ```
 
+```curl
+curl --location --request GET 'http://localhost:3000/api/v1/getAllCruises'
+```
+
 Any other url will return a page with the list of endpoint (For Documentation)
 
 ```http
