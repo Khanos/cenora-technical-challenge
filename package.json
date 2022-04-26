@@ -1,0 +1,19 @@
+{
+  "name": "cenora-technical-challenge",
+  "version": "1.0.0",
+  "description": "A brief description of what this project does and who it's for",
+  "main": "serber.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Khanos/cenora-technical-challenge.git"
+  },
+  "author": "@Khanos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Khanos/cenora-technical-challenge/issues"
+  },
+  "homepage": "https://github.com/Khanos/cenora-technical-challenge#readme"
+}
